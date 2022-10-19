@@ -17,7 +17,6 @@ if(!isset($_SESSION['usuario'])){
 <body>
     <?php
         if($_SESSION['acceso']==1){
-            
             include_once('index.php');
         }else{
             include_once('index_administrador.php');
