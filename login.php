@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +12,12 @@
     <link rel="stylesheet" href="css/styleLogin.css">
 </head>
 <body>
-    <?php
-    include_once 'index.php';
+<?php
+        if($_SESSION['acceso']==1){
+            include_once('index.php');
+        }else{
+            include_once('index_administrador.php');
+        }
     ?>
     <main>
         <div class="contenedor_todo">
