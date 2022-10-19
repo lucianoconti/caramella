@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+// if(isset($_SESSION['usuario'])){
+//   echo '<script>
+//           document.getElementByid("login").innerhtml="<a id="login" href="login.php">Cerrar Sesion</a>";
+//         </script>';
+// }
+
+
+
 if($_SESSION['acceso']==2){
     header("Location:./index_administrador.php");
 }
@@ -40,11 +49,12 @@ if($_SESSION['acceso']==2){
                   <li><a href="#">----</a></li>
                 </ul>
               </li>
-              <li id="login"><a href="login.php">Iniciar Sesion / Registrarse</a></li>
+              <li><a id="login" href="login.php">Iniciar Sesion / Registrarse</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+    
   </body>
 </html>

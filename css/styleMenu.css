@@ -33,6 +33,11 @@ header{
     width: 300px;
     padding: 10px;
 }
+/*ARTICULOS*/
+main{
+    padding: 40px 20px;
+    margin-top: 180px;
+}
 
 /*BARRA MENU*/
 
@@ -78,11 +83,6 @@ nav>ul>li>a:hover{
     transform: scale(1.1);
     background: rgb(240, 169, 240);
     box-shadow: 0px 0px 10px 0px rgba(10, 0, 0, 0.5);
-}
-/*ARTICULOS*/
-main{
-    padding: 40px 20px;
-    margin-top: 300px;
 }
 
 /* SUB MENU */
