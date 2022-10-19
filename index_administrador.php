@@ -1,8 +1,6 @@
 <?php
 session_start();
-if($_SESSION['acceso']==2){
-    header("Location:./index_administrador.php");
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -31,7 +29,7 @@ if($_SESSION['acceso']==2){
               <li><a href="contacto.php">Contactanos</a></li>
               <li><a href="mispedidos.php">Mis pedidos</a></li>
               <li><a href="#">----</a></li>
-              <li id="menu_administrador" style="display:none"><a href="#">Administradores</a>
+              <li id="menu_administrador"><a href="#">Administradores</a>
                 <ul>
                   <li><a href="alta_clientes.php">Modificar catalogo</a></li>
                   <li><a href="#">Productos a elaborar</a></li>

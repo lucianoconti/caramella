@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-    include_once 'index.php'
+    include_once 'index.php';
     ?>
     <main>
         <div class="contenedor_todo">

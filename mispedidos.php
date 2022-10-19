@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION['usuario'])){
-    header("Location: ./login.php");
+    header("Location:./login.php");
 }
 
 ?>
@@ -16,7 +16,12 @@ if(!isset($_SESSION['usuario'])){
 </head>
 <body>
     <?php
-        include_once('index.php');
+        if($_SESSION['acceso']==1){
+            
+            include_once('index.php');
+        }else{
+            include_once('index_administrador.php');
+        }
     ?>
     <h3>hola</h3>
 </body>

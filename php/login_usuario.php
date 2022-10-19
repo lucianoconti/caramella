@@ -7,27 +7,25 @@ $contrasena=$_POST['contrasena'];
 
 
 
-$verificarLogin=$database->query("select email,contrasena from usuario where email='$email'");
+$verificarLogin=$database->query("select email,contrasena,nombreCliente,Id_tipoUsuario from usuario where email='$email'");
 
 
 if($verificarLogin->num_rows > 0){
     $infomacionUsuario=$verificarLogin->fetch_assoc();
     if($infomacionUsuario["contrasena"]==$contrasena){
         $_SESSION['usuario']=$email;
-        echo '<script>
-                window.location="../index.php";
-            </script>';
-
+        $_SESSION['acceso']=$infomacionUsuario['Id_tipoUsuario'];       
+        if($_SESSION['acceso']==1){           
+            header("Location:../index.php");
+        }else{
+            header("Location:../index_administrador.php");
+        }
     }else{
-        echo '<script>
-                window.location="../login.php";
-                alert("contraseña incorrecta");
-            </script>';
-        
+        header("Location:../login.php");
     }
 }else{
-       echo '<script>
-                window.location="../login.php";
+        header("Location:../login.php");
+        echo '<script>
                 alert("Email invalido");
             </script>';
 }
