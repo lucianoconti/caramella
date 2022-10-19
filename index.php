@@ -13,7 +13,7 @@ session_start();
   
   <body>
     <header>
-      <div class="header__superior">
+      <div class="header_superior">
         <div class="logo">
           <img src="logo.webp" alt="logo">
         </div>
@@ -21,15 +21,15 @@ session_start();
           <input type="search" placeholder="¿Que torta buscas?">
         </div>
       </div>
-      <div class="containter__menu">
+      <div class="containter_menu">
         <div class="menu">
           <nav>
             <ul>
               <li><a href="index.php" >Catalogo</a></li>
-              <li><a href="compra.php">Contactanos</a></li>
+              <li><a href="contacto.php">Contactanos</a></li>
               <li><a href="mispedidos.php">Mis pedidos</a></li>
               <li><a href="#">----</a></li>
-              <li style="display:none"><a href="#">Administradores</a>
+              <li id="menu_administrador" style="display:none"><a href="#">Administradores</a>
                 <ul>
                   <li><a href="alta_clientes.php">Modificar catalogo</a></li>
                   <li><a href="#">Productos a elaborar</a></li>

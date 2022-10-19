@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION['usuario'])){
-    header("Location: ./login.php");
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +8,8 @@ if(!isset($_SESSION['usuario'])){
 </head>
 <body>
     <?php
-        include_once('index.php');
+    include_once 'index.php'
     ?>
-    <h3>hola</h3>
+    
 </body>
 </html>
