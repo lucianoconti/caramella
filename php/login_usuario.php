@@ -24,9 +24,12 @@ if($verificarLogin->num_rows > 0){
         header("Location:../login.php");
     }
 }else{
-        header("Location:../login.php");
+    echo '<script>
+    alert("Email invalido");
+        </script>';
         echo '<script>
-                alert("Email invalido");
+        window.location="../login.php";
+        
             </script>';
 }
 $verificarLogin->free();

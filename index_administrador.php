@@ -1,6 +1,15 @@
 <?php
 session_start();
 
+if(!isset($_SESSION['usuario'])){
+  header("Location:./login.php");
+}else{
+  if($_SESSION['acceso']==2){
+      include_once('index_administrador.php');
+  }else{
+    header("Location:./index.php");
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -31,7 +40,7 @@ session_start();
               <li><a href="#">----</a></li>
               <li id="menu_administrador"><a href="#">Administradores</a>
                 <ul>
-                  <li><a href="alta_clientes.php">Modificar catalogo</a></li>
+                  <li><a href="gestion_productos.php">Modificar catalogo</a></li>
                   <li><a href="#">Productos a elaborar</a></li>
                   <li><a href="#">Productos a entregar</a></li>
                   <li><a href="#">----</a></li>

@@ -7,8 +7,6 @@ session_start();
 //         </script>';
 // }
 
-
-
 if($_SESSION['acceso']==2){
     header("Location:./index_administrador.php");
 }
@@ -40,15 +38,6 @@ if($_SESSION['acceso']==2){
               <li><a href="contacto.php">Contactanos</a></li>
               <li><a href="mispedidos.php">Mis pedidos</a></li>
               <li><a href="#">----</a></li>
-              <li id="menu_administrador" style="display:none"><a href="#">Administradores</a>
-                <ul>
-                  <li><a href="alta_clientes.php">Modificar catalogo</a></li>
-                  <li><a href="#">Productos a elaborar</a></li>
-                  <li><a href="#">Productos a entregar</a></li>
-                  <li><a href="#">----</a></li>
-                  <li><a href="#">----</a></li>
-                </ul>
-              </li>
               <li><a id="login" href="login.php">Iniciar Sesion / Registrarse</a></li>
             </ul>
           </nav>

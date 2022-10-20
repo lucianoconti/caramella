@@ -11,11 +11,11 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <?php
-        if($_SESSION['acceso']==1){
-            include_once('index.php');
-        }else{
+<?php
+        if($_SESSION['acceso']==2){
             include_once('index_administrador.php');
+        }else{
+            include_once('index.php');
         }
     ?>
 </body>
