@@ -24,8 +24,7 @@ if(!isset($_SESSION['usuario'])){
     ?>
     <main>
         <h3>hola</h3>
-        <p>hola gentusaasdasdasdasd</p>
-
+        
     </main>
 </body>
 </html>

@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" href="css/styleLogin.css">
 </head>
 <body>
-<?php
+    <?php
         if($_SESSION['acceso']==2){
             include_once('index_administrador.php');
         }else{

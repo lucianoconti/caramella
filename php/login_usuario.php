@@ -7,7 +7,7 @@ $contrasena=$_POST['contrasena'];
 
 
 
-$verificarLogin=$database->query("select email,contrasena,nombreCliente,Id_tipoUsuario from usuario where email='$email'");
+$verificarLogin=$database->query("SELECT email,contrasena,nombreCliente,Id_tipoUsuario from usuario where email='$email'");
 
 
 if($verificarLogin->num_rows > 0){
@@ -25,12 +25,12 @@ if($verificarLogin->num_rows > 0){
     }
 }else{
     echo '<script>
+    window.location="../login.php";
+    
+    </script>';
+    echo '<script>
     alert("Email invalido");
         </script>';
-        echo '<script>
-        window.location="../login.php";
-        
-            </script>';
 }
 $verificarLogin->free();
 $database->close();
