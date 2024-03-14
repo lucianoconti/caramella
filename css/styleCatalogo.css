@@ -1,0 +1,56 @@
+/* Estilos del catálogo */
+.catalogo {
+    width: 100%;
+    max-width: 650px; /* Ancho máximo del catálogo */
+    margin: 200px auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se envuelvan en filas */
+    justify-content: flex-start; /* Cambiado de "space-between" a "flex-start" */
+}
+
+.producto {
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(232, 145, 232, 0.861); /* Color rosa */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 220px;
+}
+
+.producto img {
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.producto a {
+    display: inline-block;
+    background-color: rgb(183, 87, 183);
+    color: #ffffff; /* Color rosa oscuro */
+    border: 2px solid #0b0408;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para el botón de filtrado */
+.filtrar-btn {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+}

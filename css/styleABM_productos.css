@@ -1,0 +1,86 @@
+h2{
+    width: 15%;
+    margin: 10px 850px;
+}
+.contenedor-form{
+    max-width: 700px;
+    margin: 0px auto;/* Centrar horizontalmente */
+    padding: 20px 10px;
+    background-color: rgba(255, 196, 238, 0.727);
+    border-radius: 10px;
+}
+.producto-form {
+    margin: auto;
+    width: 80%;
+    max-width: 650px; /* Ancho máximo del formulario */
+    
+}
+
+/* Estilos para las etiquetas */
+.producto-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilos para los inputs */
+.producto-form input[type="text"],
+.producto-form textarea,
+.producto-form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para el botón */
+.producto-form button {
+    display: inline-block;
+    background-color: #ff1493; /* Color rosa oscuro */
+    color: #fff; /* Color blanco para el texto */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.producto-form button:hover {
+    background-color: #ff0066; /* Color rosa más oscuro al pasar el mouse */
+}
+
+.foto-producto img {
+    width: 50px; /* Tamaño de la imagen */
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.foto-producto {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.foto-producto:hover .delete-icon {
+    display: block;
+}

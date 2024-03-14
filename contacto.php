@@ -12,11 +12,7 @@ session_start();
 </head>
 <body>
 <?php
-        if($_SESSION['acceso']==2){
-            include_once('index_administrador.php');
-        }else{
-            include_once('index.php');
-        }
+            include_once('index.php');    
     ?>
 </body>
 </html>

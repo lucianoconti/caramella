@@ -1,0 +1,112 @@
+.realizar-pedido{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 196, 238, 0.727);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-radius: 5px;
+    background-color: #FF1493;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+
+p {
+    font-size: 24px; 
+    white-space: pre-wrap; 
+}
+.slick-slider {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #FF1493;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF69B4;
+}
+
+/* Opcional: Estilo para el botón de slider */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #FF1493;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.slick-prev {
+    left: -40px;
+}
+
+.slick-next {
+    right: -40px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #FF69B4;
+}
+
+.realizar-pedido>label{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}

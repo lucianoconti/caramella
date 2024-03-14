@@ -5,11 +5,25 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+#alerta{
+    margin-left: 700px;
+    text-align: center;
+    max-width: 30%;
+    border-radius: 5px;
+    background-color: aquamarine;
+    
+    }
+
+.mensaje_error{
+    background-color: rgb(224, 97, 97);
+    border-radius: 5%;
+    text-align: center;
+}
 
 .contenedor_todo{
     width: 100%;
     max-width: 800px;
-    margin: 0px auto;
+    margin: 65px auto;
     position: relative;
 }
 

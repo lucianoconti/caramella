@@ -1,0 +1,64 @@
+.gestion_productos{
+    max-width: 60%;
+    border: 5px solid purple;
+    text-align: center;
+    
+}
+
+.gestion_productos >tbody>tr>td:nth-child(odd) {
+    background-color: #ffc0fe9c; /* Color de fondo para las columnas impares (blanco) */
+}
+.gestion_productos>thead>tr>th{
+    background-color: #df73ed95;
+}
+
+.gestion_productos>thead>tr>th:nth-child(1){
+    width: 5%;
+}
+
+.gestion_productos>thead>tr>th:nth-child(2){
+    width: 20%;
+}
+
+.gestion_productos>thead>tr>th:nth-child(3){
+    width: 5%;
+}
+
+.gestion_productos>thead>tr>th:nth-child(4){
+    width: 70%;
+}
+
+.gestion_productos>thead>tr>th:nth-child(5){
+    width: 10%;
+    background-color: black;
+}
+
+
+.gestion_productos>tbody>tr>td:nth-child(1){
+width: 5%;
+}
+
+.gestion_productos>tbody>tr>td:nth-child(2){
+    width: 20%;
+}
+
+.gestion_productos>tbody>tr>td:nth-child(3){
+    width: 5%;
+}
+
+.gestion_productos>tbody>tr>td:nth-child(4){
+    width: 50%;
+}
+
+.gestion_productos>tbody>tr>td:nth-child(5){
+    width: 10%;
+}
+
+
+h2{
+    border: purple 5px solid;
+    border-bottom: none;
+    background-color: #df73ed95;;
+    max-width: 19%;
+    margin: auto 400px;
+}
